@@ -7,7 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #121212;
+            color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -15,10 +16,10 @@
             margin: 0;
         }
         .login-container {
-            background-color: #fff;
+            background-color: #1e1e1e;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             width: 300px;
         }
         .login-container h2 {
@@ -30,8 +31,10 @@
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #ccc;
+            border: 1px solid #333;
             border-radius: 4px;
+            background-color: #333;
+            color: #fff;
         }
         .login-container button {
             width: 100%;
@@ -46,10 +49,16 @@
         .login-container button:hover {
             background-color: #0056b3;
         }
+        .login-container img {
+            display: block;
+            margin: 0 auto 20px;
+            width: 100px;
+        }
     </style>
 </head>
 <body>
     <div class="login-container">
+        <img src="path/to/your/logo.png" alt="Logo">
         <h2>Login</h2>
         <form action="/login" method="post">
             <input type="text" name="username" placeholder="Username" required>
