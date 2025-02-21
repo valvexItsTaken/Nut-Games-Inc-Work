@@ -1,0 +1,104 @@
+025/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JuhannusKauppa 2025</title>
+    <style>
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background-color: #383f35;
+            color: #dbd8bf;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            background-color: #424939;
+            border-bottom: 1px solid #656c5c;
+        }
+        .header h1 {
+            color: #c3ba8e;
+            font-size: 24px;
+            font-weight: normal;
+            margin: 0;
+        }
+        .game-container {
+            margin: 20px;
+            padding: 10px;
+            background-color: #4a5445;
+            border: 1px solid #656c5c;
+            text-align: center;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #c3ba8e;
+            text-decoration: none;
+            padding: 8px 16px;
+            background-color: #424939;
+            border: 1px solid #656c5c;
+        }
+        .back-button:hover {
+            background-color: #4f5746;
+            text-decoration: underline;
+        }
+        .game-iframe {
+            width: 800px;
+            height: 600px;
+            border: none;
+            margin-bottom: 20px;
+        }
+        .manual-link {
+            color: #c3ba8e;
+            text-decoration: none;
+            font-size: 24px;
+            display: block;
+            margin-top: 20px;
+        }
+        .manual-link:hover {
+            text-decoration: underline;
+        }
+        .quote {
+            color: #c3ba8e;
+            font-style: italic;
+            margin: 10px 0;
+        }
+        .fullscreen-link {
+            color: #c3ba8e;
+            text-decoration: none;
+            margin: 10px 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a href="../" class="back-button">← Back</a>
+    
+    <div class="header">
+        <h1>JuhannusKauppa 2025</h1>
+        <div class="quote">"Pelaaja oli niin 2024" -Valvex</div>
+        <a href="game.html" class="fullscreen-link">Koko näyttö</a>
+    </div>
+    
+    <div class="game-container">
+        <iframe 
+            src="game.html" 
+            class="game-iframe"
+            allow="fullscreen *; gamepad *"
+            allowfullscreen
+            scrolling="no"
+        ></iframe>
+        <a href="manual.pdf" class="manual-link">Lue Ohjeet Tästä</a>
+    </div>
+</body>
+</html>

@@ -1,46 +1,97 @@
+index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Nut Games Inc.</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: Tahoma, Arial, sans-serif;
+            background-color: #383f35;
+            color: #dbd8bf;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        .header h1 {
+            color: #c3ba8e;
+            font-size: 24px;
+            font-weight: normal;
             margin: 0;
         }
         .main-container {
-            background-color: #1e1e1e;
+            background-color: #4a5445;
+            border: 1px solid #656c5c;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            width: 300px;
-            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        .main-container h1 {
-            margin-bottom: 20px;
+        .content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
         }
-        .main-container p {
-            margin: 10px 0;
+        .news, .games {
+            background-color: #424939;
+            border: 1px solid #656c5c;
+            padding: 15px;
+            width: 48%;
         }
-        .main-container img {
+        h2 {
+            color: #c3ba8e;
+            font-size: 18px;
+            font-weight: normal;
+            margin-top: 0;
+            border-bottom: 1px solid #656c5c;
+            padding-bottom: 10px;
+        }
+        p {
+            color: #dbd8bf;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+        a {
+            color: #c3ba8e;
+            text-decoration: none;
+            font-size: 12px;
             display: block;
-            margin: 0 auto 20px;
-            width: 100px;
+            padding: 8px;
+            margin-bottom: 5px;
+            background-color: #424939;
+            border: 1px solid #656c5c;
+        }
+        a:hover {
+            background-color: #4f5746;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="main-container">
+    <div class="header">
         <img src="resource/images/logo.png" alt="Logo">
         <h1>Welcome to Nut Games Inc.</h1>
-        <p>Your main content goes here.</p>
+    </div>
+    <div class="main-container">
+        <div class="content">
+            <div class="news">
+                <h2>News</h2>
+                <p>Verkkosivu on Päällä!</p>
+            </div>
+            <div class="games">
+                <h2>Games</h2>
+                <a href="GAMES/">School Run! (BETA)</a>
+                <a href="GAMES/JuhannusKauppa2025/index.html">JuhannusKauppa 2025 (BETA)</a>
+                <a href="GAMES/">DEMO PROJEKTIT (PIENEMMÄT)</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
